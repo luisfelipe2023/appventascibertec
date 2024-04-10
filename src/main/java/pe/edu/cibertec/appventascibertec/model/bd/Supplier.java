@@ -9,7 +9,7 @@ import lombok.Data;
 public class Supplier {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "SupplierID")
+    @Column(name ="SupplierID")
     private Integer supplierid;
     @Column(name = "CompanyName")
     private String companyname;

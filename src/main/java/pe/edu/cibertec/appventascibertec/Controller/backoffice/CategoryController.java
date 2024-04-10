@@ -1,4 +1,4 @@
-package pe.edu.cibertec.appventascibertec.Controller.backoffice;
+package pe.edu.cibertec.appventascibertec.controller.backoffice;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;

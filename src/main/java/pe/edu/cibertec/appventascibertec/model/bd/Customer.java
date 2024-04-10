@@ -11,7 +11,7 @@ import lombok.Data;
 @Table(name = "customers")
 public class Customer {
     @Id
-    @Column(name = "CustomerID")
+    @Column(name ="CustomerID")
     private String customerid;
     @Column(name = "CompanyName")
     private String companyname;

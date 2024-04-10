@@ -9,7 +9,7 @@ import lombok.Data;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ProductID")
+    @Column(name ="ProductID")
     private Integer productid;
     @Column(name = "ProductName")
     private String productname;
@@ -26,7 +26,7 @@ public class Product {
     @Column(name = "Discontinued")
     private Boolean discontinued;
     @ManyToOne
-    @JoinColumn(name = "supplierid")
+    @JoinColumn(name = "SupplierID")
     private Supplier supplier;
     @ManyToOne
     @JoinColumn(name = "CategoryID")
