@@ -8,29 +8,29 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="customers")
-public class Customers {
+@Table(name = "customers")
+public class Customer {
     @Id
-    @Column(name="CustomerID")
-    private String customerID;
-    @Column(name="CompanyName")
+    @Column(name = "CustomerID")
+    private String customerid;
+    @Column(name = "CompanyName")
     private String companyname;
-    @Column(name="ContactName")
+    @Column(name = "ContactName")
     private String contactname;
-    @Column(name="ContactTitle")
+    @Column(name = "ContactTitle")
     private String contacttitle;
-    @Column(name="Address")
+    @Column(name = "Address")
     private String address;
-    @Column(name="City")
+    @Column(name = "City")
     private String city;
-    @Column(name="Region")
+    @Column(name = "Region")
     private String region;
-    @Column(name="PostalCode")
+    @Column(name = "PostalCode")
     private String postalcode;
-    @Column(name="Country")
+    @Column(name = "Country")
     private String country;
-    @Column(name="Phone")
+    @Column(name = "Phone")
     private String phone;
-    @Column(name="Fax")
+    @Column(name = "Fax")
     private String fax;
 }

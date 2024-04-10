@@ -1,20 +1,17 @@
 package pe.edu.cibertec.appventascibertec.model.bd;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
 @Entity
 @Table(name = "categories")
 public class Category {
-    @Column(name = "CategoryID")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer categoryid;
-    @Column(name = "CategoryName")
+    @Column(name ="categoryname")
     private String categoryname;
-    @Column(name = "Description")
+    @Column(name = "description")
     private String description;
-
-
 }
