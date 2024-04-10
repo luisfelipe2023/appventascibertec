@@ -9,27 +9,28 @@ import lombok.Data;
 public class Supplier {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "SupplierID")
     private Integer supplierid;
-    @Column(name = "companyname")
+    @Column(name = "CompanyName")
     private String companyname;
-    @Column(name = "contactname")
+    @Column(name = "ContactName")
     private String contactname;
-    @Column(name = "contacttitle")
+    @Column(name = "ContactTitle")
     private String contacttitle;
-    @Column(name = "address")
+    @Column(name = "Address")
     private String address;
-    @Column(name = "city")
+    @Column(name = "City")
     private String city;
-    @Column(name = "region")
+    @Column(name = "Region")
     private String region;
-    @Column(name = "postalcode")
+    @Column(name = "PostalCode")
     private String postalcode;
-    @Column(name = "country")
+    @Column(name = "Country")
     private String country;
-    @Column(name = "phone")
+    @Column(name = "Phone")
     private String phone;
-    @Column(name = "fax")
+    @Column(name = "Fax")
     private String fax;
-    @Column(name = "homepage")
+    @Column(name = "HomePage")
     private String homepage;
 }

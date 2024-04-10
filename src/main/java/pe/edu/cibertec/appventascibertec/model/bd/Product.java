@@ -9,25 +9,26 @@ import lombok.Data;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ProductID")
     private Integer productid;
-    @Column(name = "productname")
+    @Column(name = "ProductName")
     private String productname;
-    @Column(name = "quantityperunit")
+    @Column(name = "QuantityPerUnit")
     private String quantityperunit;
-    @Column(name = "unitprice")
+    @Column(name = "UnitPrice")
     private Double unitprice;
-    @Column(name = "unitsinstock")
+    @Column(name = "UnitsInStock")
     private Integer unitsinstock;
-    @Column(name = "unitsonorder")
+    @Column(name = "UnitsOnOrder")
     private Integer unitsonorder;
-    @Column(name = "reorderlevel")
+    @Column(name = "ReorderLevel")
     private Integer reorderlevel;
-    @Column(name = "discontinued")
+    @Column(name = "Discontinued")
     private Boolean discontinued;
     @ManyToOne
     @JoinColumn(name = "supplierid")
     private Supplier supplier;
     @ManyToOne
-    @JoinColumn(name = "categoryid")
+    @JoinColumn(name = "CategoryID")
     private Category category;
 }
