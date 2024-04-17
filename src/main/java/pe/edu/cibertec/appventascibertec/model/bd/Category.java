@@ -1,8 +1,13 @@
 package pe.edu.cibertec.appventascibertec.model.bd;
 
-import jakarta.persistence.*;
-import lombok.Data;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Column;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+import lombok.Data;
 @Data
 @Entity
 @Table(name = "categories")
